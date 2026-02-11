@@ -1,14 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drew Brantley - Software Engineer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        background-color: #0a0a0a;
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      
+      .business-card {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        border: 2px solid #404040;
+        border-radius: 15px;
+        padding: 40px 50px;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      }
+      
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #404040;
+        padding-bottom: 20px;
+      }
+      
+      .name {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #ffffff;
+      }
+      
+      .title {
+        font-size: 1.3em;
+        color: #b0b0b0;
+        font-weight: 300;
+      }
+      
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .link-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        background-color: #1a1a1a;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        border: 1px solid #2d2d2d;
+      }
+      
+      .link-item:hover {
+        background-color: #2d2d2d;
+        border-color: #505050;
+      }
+      
+      .link-item a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1em;
+        flex: 1;
+      }
+      
+      .link-item a:hover {
+        color: #4a9eff;
+      }
+      
+      .contact-note {
+        text-align: center;
+        margin-top: 25px;
+        padding-top: 20px;
+        border-top: 1px solid #404040;
+        color: #808080;
+        font-size: 0.9em;
+        font-style: italic;
+      }
+      
+      @media (max-width: 600px) {
+        .business-card {
+          padding: 30px 25px;
+        }
+        
+        .name {
+          font-size: 2em;
+        }
+        
+        .title {
+          font-size: 1.1em;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div><a href="https://resume.andbrant.com/">Resume</a></div>
-    <div><a href="https://resume.andbrant.com/AndrewBrantleyResume.pdf">Resume download</a></div>
-    <div><a href="https://matrix.to/#/@andbrant:matrix.org">Element</a></div>
-    <div><a href="https://github.com/yeltnar">GitHub</a></div>
-    <div><a href="https://www.linkedin.com/in/andrew-brantley-92707572/">Linkedin</a></div>	        
-    <div>Message me for a email or phone</div>
+    <div class="business-card">
+      <div class="header">
+        <div class="name">Drew Brantley</div>
+        <div class="title">Software Engineer</div>
+      </div>
+      
+      <div class="links">
+        <div class="link-item">
+          <a href="https://resume.andbrant.com/" target="_blank">📄 Resume</a>
+        </div>
+        <div class="link-item">
+          <a href="https://resume.andbrant.com/AndrewBrantleyResume.pdf" target="_blank">⬇️ Resume Download</a>
+        </div>
+        <div class="link-item">
+          <a href="https://github.com/yeltnar" target="_blank">💻 GitHub</a>
+        </div>
+        <div class="link-item">
+          <a href="https://www.linkedin.com/in/andrew-brantley-92707572/" target="_blank">💼 LinkedIn</a>
+        </div>
+        <div class="link-item">
+          <a href="https://matrix.to/#/@andbrant:matrix.org" target="_blank">💬 Element</a>
+        </div>
+      </div>
+      
+      <div class="contact-note">
+        Message me for email or phone
+      </div>
+    </div>
   </body>
 </html>
