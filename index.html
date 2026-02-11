@@ -78,9 +78,40 @@
         text-decoration: none;
         font-size: 1em;
         flex: 1;
+        text-align: center;
       }
       
-
+      .split-button {
+        display: flex;
+        background-color: #1a1a1a;
+        border-radius: 8px;
+        border: 1px solid #2d2d2d;
+        overflow: hidden;
+      }
+      
+      .split-button-left,
+      .split-button-right {
+        padding: 12px 15px;
+        transition: all 0.3s ease;
+        flex: 1;
+        text-align: center;
+      }
+      
+      .split-button-left {
+        border-right: 1px solid #2d2d2d;
+      }
+      
+      .split-button-left:hover,
+      .split-button-right:hover {
+        background-color: #2d2d2d;
+      }
+      
+      .split-button a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1em;
+        display: block;
+      }
       
       .contact-note {
         text-align: center;
@@ -115,11 +146,13 @@
       </div>
       
       <div class="links">
-        <div class="link-item">
-          <a href="https://resume.andbrant.com/" target="_blank">📄 Resume</a>
-        </div>
-        <div class="link-item">
-          <a href="https://resume.andbrant.com/AndrewBrantleyResume.pdf" target="_blank">⬇️ Resume Download</a>
+        <div class="split-button">
+          <div class="split-button-left">
+            <a href="https://resume.andbrant.com/" target="_blank">📄 Resume</a>
+          </div>
+          <div class="split-button-right">
+            <a href="https://resume.andbrant.com/AndrewBrantleyResume.pdf" target="_blank">⬇️ Download</a>
+          </div>
         </div>
         <div class="link-item">
           <a href="https://github.com/yeltnar" target="_blank">💻 GitHub</a>
